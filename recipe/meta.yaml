@@ -1,17 +1,16 @@
-{% set version = "0.0.2" %}
+{% set version = "2020.03.27" %}
 
 package:
   name: pangeo-notebook
   version: {{ version }}
 
 build:
-  number: 2
+  number: 0
   noarch: generic
 
 requirements:
   run:
-    - pangeo-dask =0.0.2
-    - dask-gateway =0.6*
+    - pangeo-dask =2020.03.27
     - dask-labextension =1.1*
     - jupyter-server-proxy =1.2*
     - jupyterhub =1.1*
@@ -32,3 +31,4 @@ extra:
   recipe-maintainers:
     - scottyhq 
     - jhamman
+    - TomAugspurger
