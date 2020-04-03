@@ -14,8 +14,10 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
         with:
-          repository: 'pangeo-data/pangeo-notebook-feedstock'
           ref: 'master'
+        run: |
+          git remote add upstream https://github.com/conda-forge/pangeo-notebook-feedstock.git
+          git pull upstream master
 
       - name: calver
         id: calver
