@@ -16,8 +16,9 @@ jobs:
         with:
           ref: 'master'
         run: |
-          git remote add upstream https://github.com/conda-forge/pangeo-notebook-feedstock.git
-          git pull upstream master
+          git config user.password ${{ secrets.PAT }}
+          git remote set-url origin https://github.com/pangeo-bot/pangeo-notebook-feedstock
+          git fetch --unshallow -p origin
 
       - name: calver
         id: calver
@@ -130,6 +131,7 @@ jobs:
           title: "Update pangeo-dask metapackage version(s)"
           reviewers: "scottyhq"
           branch: "upgrade-notebook-versions"
+          token: ${{ secrets.PAT }}
           request-to-parent: true
           body: |
             It is very likely that one or more of the packages in this metapackage are out of date.
