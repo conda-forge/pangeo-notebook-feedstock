@@ -88,20 +88,20 @@ jobs:
           find: "jupyterhub =.*"
           replace: "jupyterhub =${{ steps.latest_version_jupyterhub.outputs.version }}"
 
-      - name: Get latest jupyterlab version
-        id: latest_version_jupyterlab
-        uses: jacobtomlinson/gha-anaconda-package-version@0.1.1
-        with:
-          org: "conda-forge"
-          package: "jupyterlab"
+#       - name: Get latest jupyterlab version
+#         id: latest_version_jupyterlab
+#         uses: jacobtomlinson/gha-anaconda-package-version@0.1.1
+#         with:
+#           org: "conda-forge"
+#           package: "jupyterlab"
 
-      - name: Find and Replace jupyterlab
-        id: jupyterlab
-        uses: jacobtomlinson/gha-find-replace@0.1.1
-        with:
-          include: "meta.yaml"
-          find: "jupyterlab =.*"
-          replace: "jupyterlab =${{ steps.latest_version_jupyterlab.outputs.version }}"
+#       - name: Find and Replace jupyterlab
+#         id: jupyterlab
+#         uses: jacobtomlinson/gha-find-replace@0.1.1
+#         with:
+#           include: "meta.yaml"
+#           find: "jupyterlab =.*"
+#           replace: "jupyterlab =${{ steps.latest_version_jupyterlab.outputs.version }}"
 
       - name: Get latest nbgitpuller version
         id: latest_version_nbgitpuller
