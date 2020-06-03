@@ -93,15 +93,15 @@ jobs:
         uses: jacobtomlinson/gha-anaconda-package-version@0.1.1
         with:
           org: "conda-forge"
-          package: "jupyterhub"
+          package: "jupyterhub-singleuser"
 
       - name: Find and Replace jupyterhub
         id: jupyterhub
         uses: jacobtomlinson/gha-find-replace@0.1.1
         with:
           include: "meta.yaml"
-          find: "jupyterhub =.*"
-          replace: "jupyterhub =${{ steps.latest_version_jupyterhub.outputs.version }}"
+          find: "jupyterhub-singleuser =.*"
+          replace: "jupyterhub-singleuser =${{ steps.latest_version_jupyterhub.outputs.version }}"
 
 #       - name: Get latest jupyterlab version
 #         id: latest_version_jupyterlab
