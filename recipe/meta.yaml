@@ -11,6 +11,7 @@ build:
 requirements:
   run:
     - pangeo-dask =2020.06.10
+    - bokeh =2.0.2  # pinned
     - dask-labextension =2.0.2
     - ipywidgets =7.5.1
     - jupyter-server-proxy =1.5.0
