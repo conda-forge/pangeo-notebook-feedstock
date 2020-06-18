@@ -1,4 +1,4 @@
-{% set version = "2020.06.10" %}
+{% set version = "2020.06.18" %}
 
 package:
   name: pangeo-notebook
