@@ -1,4 +1,4 @@
-{% set version = "2020.08.01" %}
+{% set version = "2020.08.02" %}
 
 package:
   name: pangeo-notebook
@@ -16,7 +16,7 @@ requirements:
     - jupyter-server-proxy =1.5.0
     - jupyterhub-singleuser =1.1.0
     - jupyterlab >=2
-    - nbgitpuller =0.8.0
+    - nbgitpuller =0.9.0
     - nodejs >=12
 
 test:
