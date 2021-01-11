@@ -50,13 +50,13 @@ jobs:
           org: "conda-forge"
           package: "dask-labextension"
 
-      - name: Find and Replace dask-labextension
-        id: labextension
-        uses: jacobtomlinson/gha-find-replace@0.1.1
-        with:
-          include: "meta.yaml"
-          find: "dask-labextension =.*"
-          replace: "dask-labextension =${{ steps.latest_version_labext.outputs.version }}"
+#      - name: Find and Replace dask-labextension
+#        id: labextension
+#        uses: jacobtomlinson/gha-find-replace@0.1.1
+#        with:
+#          include: "meta.yaml"
+#          find: "dask-labextension =.*"
+#          replace: "dask-labextension =${{ steps.latest_version_labext.outputs.version }}"
 
       # - name: Get latest ipywidgets version
       #   id: latest_version_ipywidgets
