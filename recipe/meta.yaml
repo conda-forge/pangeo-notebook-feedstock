@@ -1,4 +1,4 @@
-{% set version = "2021.05.20" %}
+{% set version = "2021.05.30" %}
 
 package:
   name: pangeo-notebook
@@ -10,7 +10,7 @@ build:
 
 requirements:
   run:
-    - pangeo-dask =2021.05.15
+    - pangeo-dask =2021.05.30
     - dask-labextension =5.0.1
     - ipywidgets =7.6.3
     - jupyter-server-proxy =3.0.2
