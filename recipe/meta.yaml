@@ -1,4 +1,4 @@
-{% set version = "2022.03.08" %}
+{% set version = "2022.03.13" %}
 
 package:
   name: pangeo-notebook
@@ -14,8 +14,8 @@ requirements:
     - dask-labextension =5.2.0
     - ipywidgets =7.6.5
     - jupyter-server-proxy =3.2.1
-    - jupyterhub-singleuser =2.2.0
-    - jupyterlab =3.3.0
+    - jupyterhub-singleuser =2.2.1
+    - jupyterlab =3.3.1
     - nbgitpuller =1.0.2
 
 test:
