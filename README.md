@@ -146,4 +146,5 @@ Feedstock Maintainers
 * [@TomAugspurger](https://github.com/TomAugspurger/)
 * [@jhamman](https://github.com/jhamman/)
 * [@scottyhq](https://github.com/scottyhq/)
+* [@yuvipanda](https://github.com/yuvipanda/)
 
