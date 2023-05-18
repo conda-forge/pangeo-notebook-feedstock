@@ -1,11 +1,11 @@
-About pangeo-notebook
-=====================
+About pangeo-notebook-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pangeo-notebook-feedstock/blob/main/LICENSE.txt)
 
 Home: http://pangeo.io
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pangeo-notebook-feedstock/blob/main/LICENSE.txt)
 
 Summary: pangeo notebook dependencies
 
